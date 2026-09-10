@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Officer Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="loadDashboard(); showCases()">
+
+    <header>
+
+        <h1>NHAA 14566</h1>
+
+        <p>Officer Dashboard</p>
+
+    </header>
+
+
+    <div class="main">
+
+        <h2>Assessment Overview</h2>
+
+        <p>
+            Review assessment indicators and provide
+            appropriate support when needed.
+        </p>
+
+        <div class="dashboardCards">
+
+    <div class="card">
+        <h3>Total Cases</h3>
+        <h2 id="totalCases">0</h2>
+    </div>
+
+
+    <div class="card">
+        <h3>Low</h3>
+        <h2 id="lowCases">0</h2>
+    </div>
+
+
+    <div class="card">
+        <h3>Moderate</h3>
+        <h2 id="moderateCases">0</h2>
+    </div>
+
+
+    <div class="card">
+        <h3>High</h3>
+        <h2 id="highCases">0</h2>
+    </div>
+
+    </div>
+
+    </div>
+    <h2>Assessment Cases</h2>
+
+    <div class="filters">
+
+    <input
+        type="text"
+        id="searchCase"
+        placeholder="Search Case ID"
+        onkeyup="filterCases()"
+    >
+
+    <select id="levelFilter" onchange="filterCases()">
+
+        <option value="All">All</option>
+        <option value="Low">Low</option>
+        <option value="Moderate">Moderate</option>
+        <option value="High">High</option>
+
+    </select>
+
+</div>
+
+<table class="caseTable">
+
+    <tr>
+        <th>Case ID</th>
+        <th>Score</th>
+        <th>Indicator</th>
+        <th>Status</th>
+    </tr>
+
+    <tbody id="caseTableBody">
+
+    </tbody>
+
+</table>
+<div class="caseDetails">
+
+    <h2>Case Details</h2>
+
+    <p id="caseId">
+        Select a case from the table.
+    </p>
+
+    <p id="caseScore"></p>
+
+    <p id="caseLevel"></p>
+
+    <p id="caseStatus"></p>
+
+    <p id="caseAdvice"></p>
+
+    <select id="statusChange">
+
+        <option value="Pending">Pending</option>
+        <option value="Reviewed">Reviewed</option>
+        <option value="Support Provided">Support Provided</option>
+
+    </select>
+
+    <button onclick="updateStatus()">
+        Update Status
+    </button>
+
+</div>
+
+    <footer>
+
+        <p>
+            Assessment information should be handled
+            with care and confidentiality.
+        </p>
+
+    </footer>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

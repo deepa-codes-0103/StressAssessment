@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Stress Assessment</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <header>
+
+        <h1>NHAA 14566</h1>
+
+        <p>Integrated Victim Support Portal</p>
+
+    </header>
+
+
+    <div class="main">
+
+        <h2>Stress & Trauma Assessment</h2>
+
+        
+          <p id="questionNumber">Question 1 of 10</p>
+
+        <!-- Progress Bar -->
+
+        <div class="progress">
+
+            <div class="progressBar"></div>
+
+        </div>
+
+
+        <!-- Question -->
+
+        <h3 id="question">
+          How often have you felt nervous, anxious,
+          or on edge recently?
+        </h3>
+
+
+        <!-- Answer Options -->
+
+        <div class="options">
+
+    <label>
+        <input type="radio" name="answer" value="0">
+        Never
+    </label>
+
+    <label>
+        <input type="radio" name="answer" value="1">
+        Sometimes
+    </label>
+
+    <label>
+        <input type="radio" name="answer" value="2">
+        Often
+    </label>
+
+    <label>
+        <input type="radio" name="answer" value="3">
+        Almost always
+    </label>
+
+</div>
+
+
+        <!-- Buttons -->
+
+        <button onclick="previousQuestion()">
+            Previous
+        </button>
+
+        <button onclick="nextQuestion()">
+            Next
+        </button>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            You can stop the assessment at any time.
+        </p>
+
+        <p>
+            This assessment is only a support tool and
+            does not provide a medical diagnosis.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Support Options</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="showSupportMessage()">
+
+    <!-- Header -->
+
+    <header>
+
+        <h1>NHAA 14566</h1>
+
+        <p>Integrated Victim Support Portal</p>
+
+    </header>
+
+
+    <!-- Main Content -->
+
+    <div class="main">
+
+    <h2>Support & Assistance</h2>
+
+    <p id="supportMessage">
+        Based on your assessment, here are some support options for you.
+    </p>
+
+
+    <div class="supportBox">
+
+        <h3>Professional Support</h3>
+
+        <p>
+            You can speak with a trained support professional
+            who can listen to your concerns and help you decide
+            what to do next.
+        </p>
+
+        <button onclick="contactCounsellor()">
+            Talk to a Counsellor
+        </button>
+
+    </div>
+
+
+    <div class="supportBox">
+
+        <h3>Immediate Help</h3>
+
+        <p>
+            If you feel unsafe or believe you are in immediate
+            danger, seek help from a trusted person or the
+            appropriate emergency service.
+        </p>
+
+        <button class="helpButton" onclick="getHelp()">
+            Get Immediate Help
+        </button>
+
+    </div>
+
+
+    <div class="supportBox">
+
+        <h3>Self-Care & Coping</h3>
+
+        <p>
+            Take a few slow breaths, move to a safe and quiet
+            place, and consider talking to someone you trust.
+        </p>
+
+        <p>
+            You do not have to deal with difficult feelings alone.
+        </p>
+
+    </div>
+
+
+    <button onclick="goHome()">
+        Return to Home
+    </button>
+
+</div>
+
+
+        <!-- Support Option 2 -->
+
+        <div class="supportBox">
+
+            <h3>Immediate Help</h3>
+
+            <p>
+                If you feel unsafe or need urgent assistance,
+                contact the appropriate emergency service.
+            </p>
+
+            <button class="helpButton" onclick="getHelp()">
+                Get Immediate Help
+            </button>
+
+        </div>
+
+
+        <!-- Support Option 3 -->
+
+        <div class="supportBox">
+
+            <h3>Continue Later</h3>
+
+            <p>
+                You can leave this page and return to the
+                portal whenever you are ready.
+            </p>
+
+            <button onclick="goHome()">
+                Return to Home
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+            Your privacy and safety are important to us.
+        </p>
+
+        <p>
+            This platform is a support tool and does not
+            replace professional evaluation.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

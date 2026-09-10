@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Assessment Result</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="calculateResult()">
+
+    <header>
+
+        <h1>NHAA 14566</h1>
+
+        <p>Integrated Victim Support Portal</p>
+
+    </header>
+
+
+    <div class="main">
+
+        <h2>Assessment Result</h2>
+
+        <p>
+            Your assessment has been completed.
+        </p>
+
+
+        <div class="resultBox">
+
+            <h3>Stress & Trauma Indicator</h3>
+
+            <h2 id="resultLevel">Moderate</h2>
+
+            <p id="resultMessage">
+                Your responses indicate some signs of
+                stress or emotional difficulty.
+            </p>
+
+        </div>
+
+
+        <div class="adviceBox">
+
+            <h3>What does this mean?</h3>
+
+            <p id="resultAdvice">
+                Your responses may indicate that you
+                are experiencing some emotional difficulty.
+            </p>
+
+        </div>
+
+
+        <div class="nextBox">
+
+            <h3>Recommended Next Step</h3>
+
+            <p id="nextStep">
+                Consider speaking with a trained support professional.
+            </p>
+
+        </div>
+
+
+        <h3>Remember</h3>
+
+        <p>
+            This assessment is only a support indicator.
+            It is not a medical diagnosis.
+        </p>
+
+        <p>
+            You can choose to speak with a trained
+            professional for further support.
+        </p>
+
+
+        <button onclick="goToSupport()">
+            View Support Options
+        </button>
+
+
+        <button onclick="goHome()">
+            Return to Home
+        </button>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+            Your responses should be handled with care
+            and used only for providing appropriate support.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
