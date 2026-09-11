@@ -544,4 +544,7 @@ function updateStatus() {
     alert("Case status updated.");
 
 }
+function goToOfficer() {
+    window.location.href = "officer.html";
+}
 
